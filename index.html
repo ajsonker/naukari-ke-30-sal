@@ -13,6 +13,7 @@
 
 <title>30 Years Reunion - Willingness Form</title>
 
+
 <style>
 
 /* =========================================
@@ -25,6 +26,7 @@
 
 html,
 body {
+
     margin: 0;
     padding: 0;
 
@@ -33,12 +35,19 @@ body {
 
     background: #eeeeee;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 }
 
+
 body {
+
     display: flex;
+
     justify-content: center;
+
     align-items: flex-start;
 }
 
@@ -48,9 +57,11 @@ body {
    ========================================= */
 
 .poster {
+
     position: relative;
 
     width: 100%;
+
     max-width: 854px;
 
     aspect-ratio: 854 / 1281;
@@ -61,9 +72,10 @@ body {
 }
 
 
-/* BACKGROUND IMAGE */
+/* BACKGROUND */
 
 .poster-image {
+
     position: absolute;
 
     left: 0;
@@ -85,11 +97,13 @@ body {
    ========================================= */
 
 .form-area {
+
     position: absolute;
 
     top: 38.5%;
 
     left: 7.5%;
+
     right: 7.5%;
 
     z-index: 10;
@@ -97,11 +111,13 @@ body {
 
 
 /* =========================================
-   EACH FIELD
+   FIELD
    ========================================= */
 
 .field {
+
     display: flex;
+
     align-items: center;
 
     width: 100%;
@@ -118,11 +134,12 @@ body {
 
     padding-right: 8px;
 
-    font-size: clamp(
-        11px,
-        2.1vw,
-        20px
-    );
+    font-size:
+        clamp(
+            11px,
+            2.1vw,
+            20px
+        );
 
     font-weight: bold;
 
@@ -132,78 +149,92 @@ body {
 }
 
 
-/* INPUT */
+/* INPUT + SELECT */
 
-.field input {
+.field input,
+.field select {
+
     width: 68%;
 
-    height: clamp(
-        27px,
-        3.8vw,
-        40px
-    );
+    height:
+        clamp(
+            27px,
+            3.8vw,
+            40px
+        );
 
     padding: 4px 9px;
 
-    border: 1.5px solid #555;
+    border:
+        1.5px solid #555;
 
     border-radius: 5px;
 
-    background: rgba(255,255,255,0.96);
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.96
+        );
 
     color: #222;
 
-    font-size: clamp(
-        11px,
-        1.8vw,
-        17px
-    );
+    font-size:
+        clamp(
+            11px,
+            1.8vw,
+            17px
+        );
 
     outline: none;
 }
-    box-shadow:
-        0 1px 3px
-        rgba(0,0,0,0.15);
-}
 
 
-/* INPUT FOCUS */
+/* FOCUS */
 
-.field input:focus {
+.field input:focus,
+.field select:focus {
 
     border-color: #111;
 
     box-shadow:
         0 0 0 2px
-        rgba(0,0,0,0.08);
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
 }
 
 
-/* PLACEHOLDER */
+/* SELECT */
 
-.field input::placeholder {
+.field select {
 
-    color: #888;
+    cursor: pointer;
 }
 
 
 /* =========================================
-   SUBMIT AREA
+   SUBMIT
    ========================================= */
 
 .submit-area {
+
     text-align: center;
 
     margin-top: 1.2%;
 }
 
 
-/* SUBMIT BUTTON */
-
 #submitBtn {
+
     min-width: 125px;
 
-    padding: 7px 22px;
+    padding:
+        7px 22px;
 
     border: none;
 
@@ -213,33 +244,33 @@ body {
 
     color: white;
 
-    font-size: clamp(
-        11px,
-        1.7vw,
-        16px
-    );
+    font-size:
+        clamp(
+            11px,
+            1.7vw,
+            16px
+        );
 
     font-weight: bold;
 
     cursor: pointer;
 
     box-shadow:
-        0 2px 4px rgba(0,0,0,0.2);
-}
-    transition:
-        transform 0.15s ease;
+        0 2px 4px
+        rgba(
+            0,
+            0,
+            0,
+            0.2
+        );
 }
 
-
-/* BUTTON PRESS */
 
 #submitBtn:active {
 
     transform: scale(0.97);
 }
 
-
-/* DISABLED */
 
 #submitBtn:disabled {
 
@@ -255,17 +286,18 @@ body {
 
 #message {
 
-    margin-top: 8px;
+    margin-top: 5px;
 
-    min-height: 20px;
+    min-height: 18px;
 
     text-align: center;
 
-    font-size: clamp(
-        11px,
-        1.7vw,
-        16px
-    );
+    font-size:
+        clamp(
+            10px,
+            1.5vw,
+            15px
+        );
 
     font-weight: bold;
 
@@ -281,26 +313,37 @@ body {
 
     html,
     body {
+
         background: white;
     }
 
+
     .poster {
+
         width: 100%;
+
         max-width: 100%;
     }
 
+
     .form-area {
+
         top: 38.5%;
 
         left: 7%;
+
         right: 7%;
     }
 
+
     .field {
+
         margin-bottom: 1.2%;
     }
 
+
     .field label {
+
         width: 32%;
 
         font-size: 9px;
@@ -308,50 +351,61 @@ body {
         padding-right: 4px;
     }
 
-    .field input {
+
+    .field input,
+    .field select {
+
         width: 68%;
 
         height: 25px;
 
-        padding: 3px 6px;
+        padding:
+            3px 6px;
 
         font-size: 11px;
 
         border-radius: 4px;
     }
 
+
     .submit-area {
+
         margin-top: 1.2%;
     }
 
+
     #submitBtn {
+
         min-width: 105px;
 
-        padding: 6px 18px;
+        padding:
+            6px 18px;
 
         font-size: 11px;
 
         border-radius: 5px;
     }
 
+
     #message {
+
         margin-top: 3px;
 
         font-size: 10px;
     }
-}
+
 }
 
 
 /* =========================================
-   SMALL MOBILE
+   VERY SMALL PHONE
    ========================================= */
 
 @media (max-width: 380px) {
 
     .form-area {
 
-        top: 42.5%;
+        top: 38.5%;
 
         left: 6%;
 
@@ -361,23 +415,25 @@ body {
 
     .field label {
 
-        font-size: 9px;
+        font-size: 8px;
     }
 
 
-    .field input {
+    .field input,
+    .field select {
 
-        height: 28px;
+        height: 23px;
 
-        font-size: 11px;
+        font-size: 10px;
     }
 
 
     #submitBtn {
 
-        padding: 7px 18px;
+        padding:
+            5px 16px;
 
-        font-size: 12px;
+        font-size: 10px;
     }
 
 }
@@ -390,14 +446,12 @@ body {
 <body>
 
 
-<!-- =======================================
-     POSTER
-     ======================================= -->
-
 <div class="poster">
 
 
-    <!-- BACKGROUND IMAGE -->
+    <!-- =================================
+         BACKGROUND IMAGE
+         ================================= -->
 
     <img
         class="poster-image"
@@ -405,9 +459,9 @@ body {
         alt="30 Years Reunion">
 
 
-    <!-- ===================================
+    <!-- =================================
          FORM
-         =================================== -->
+         ================================= -->
 
     <div class="form-area">
 
@@ -480,7 +534,67 @@ body {
         </div>
 
 
-        <!-- SUBMIT -->
+        <!-- =================================
+             FOOD PREFERENCE
+             ================================= -->
+
+        <div class="field">
+
+            <label for="food">
+                Food
+            </label>
+
+            <select id="food">
+
+                <option value="" selected>
+                    Select
+                </option>
+
+                <option value="Vegetarian">
+                    Vegetarian
+                </option>
+
+                <option value="Non-Vegetarian">
+                    Non-Vegetarian
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- =================================
+             ALCOHOL PREFERENCE
+             ================================= -->
+
+        <div class="field">
+
+            <label for="alcohol">
+                Alcohol
+            </label>
+
+            <select id="alcohol">
+
+                <option value="" selected>
+                    Select
+                </option>
+
+                <option value="Alcoholic">
+                    Alcoholic
+                </option>
+
+                <option value="Non-Alcoholic">
+                    Non-Alcoholic
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- =================================
+             SUBMIT
+             ================================= -->
 
         <div class="submit-area">
 
@@ -509,7 +623,7 @@ body {
 
 
 /* =========================================
-   GOOGLE APPS SCRIPT BACKEND URL
+   GOOGLE APPS SCRIPT BACKEND
    ========================================= */
 
 const SCRIPT_URL =
@@ -551,6 +665,18 @@ function submitForm() {
         .getElementById("mobile")
         .value
         .trim();
+
+
+    const food =
+        document
+        .getElementById("food")
+        .value;
+
+
+    const alcohol =
+        document
+        .getElementById("alcohol")
+        .value;
 
 
     const message =
@@ -604,6 +730,24 @@ function submitForm() {
     }
 
 
+    if (food === "") {
+
+        message.innerHTML =
+            "Please select your food preference.";
+
+        return;
+    }
+
+
+    if (alcohol === "") {
+
+        message.innerHTML =
+            "Please select your alcohol preference.";
+
+        return;
+    }
+
+
     /* =====================================
        DISABLE BUTTON
        ===================================== */
@@ -648,12 +792,26 @@ function submitForm() {
     );
 
 
+    formData.append(
+        "food",
+        food
+    );
+
+
+    formData.append(
+        "alcohol",
+        alcohol
+    );
+
+
     /* =====================================
-       SEND DATA TO GOOGLE APPS SCRIPT
+       SEND TO GOOGLE APPS SCRIPT
        ===================================== */
 
     fetch(
+
         SCRIPT_URL,
+
         {
 
             method: "POST",
@@ -671,19 +829,20 @@ function submitForm() {
                 formData.toString()
 
         }
+
     )
 
 
     .then(function() {
 
 
-        /* SUCCESS MESSAGE */
+        /* SUCCESS */
 
         message.innerHTML =
             "✓ Response submitted successfully!";
 
 
-        /* CLEAR FORM */
+        /* CLEAR FIELDS */
 
         document
             .getElementById("name")
@@ -705,7 +864,17 @@ function submitForm() {
             .value = "";
 
 
-        /* ENABLE BUTTON */
+        document
+            .getElementById("food")
+            .value = "";
+
+
+        document
+            .getElementById("alcohol")
+            .value = "";
+
+
+        /* ENABLE */
 
         button.disabled = false;
 
